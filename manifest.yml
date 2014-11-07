@@ -5,4 +5,4 @@ applications:
   instances: 1
   host: drupalmix
   path: .
-  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack#v2.0
+  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack
