@@ -19,4 +19,4 @@ Usage
 6. Visit your site's Install.php URL: http://drupalmix.mybluemix.net/install.php
 7. Install drupal!
 
-That's basically it.  The buildpack sets up MySQL service automatically.
+That's basically it.
