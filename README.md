@@ -19,5 +19,20 @@ Usage
 6. Visit your site's Install.php URL: http://drupalmix.mybluemix.net/install.php
 7. Install drupal!
 
-That's basically it.
+Moving to Git
+-------------
+
+Bluemix works on `cf push`.  It pushes whatever code is in the directory up to your app.
+
+If you want to use IBM's git host for your application you can do the following:
+
+1. Visit the bluemix dashboard: https://ace.ng.bluemix.net/
+2. Visit your apps page.
+3. Click "Add Git".
+4. In the window that pops up called "Create Git Repository", click "continue". Wait for it to complete, then click "close".
+5. On your app's page, you will now see "GIT URL".  Click the link to visit your Repo.  
+6. hub.jazz.net is similar to github.  Click "Git URL" to see the URL for your Repo.  
+7. Clone your repo: `git clone https://hub.jazz.net/git/jonpugh/dkan`.
+8. Copy your drupal code to this repo, add and commit and push it.
+9. Click "BUILD & DEPLOY" from your git repo's page to see that your push is pending deployment.
 
