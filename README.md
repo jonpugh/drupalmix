@@ -36,3 +36,12 @@ If you want to use IBM's git host for your application you can do the following:
 8. Copy your drupal code to this repo, add and commit and push it.
 9. Click "BUILD & DEPLOY" from your git repo's page to see that your push is pending deployment.
 
+After testing, it seems that pushing new code breaks your drupal site with the following error:
+
+> PDOException: SQLSTATE[HY000] [1129] Host '23.246.207.44' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts' in lock_may_be_available() (line 167 of /home/vcap/app/htdocs/includes/lock.inc).
+
+You can fix it with a call to cf:
+
+  `cf restage drupalmix` 
+
+Rreplace drupalmix with your app's name.
